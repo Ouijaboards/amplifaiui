@@ -1,0 +1,92 @@
+/* Additional styles for OpenManus integration */
+.openmanus {
+  background-color: var(--light-color);
+  padding: 100px 0;
+}
+
+.chat-container {
+  max-width: 800px;
+  margin: 30px auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.chat-output {
+  height: 300px;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #eee;
+}
+
+.chat-form {
+  display: flex;
+  padding: 15px;
+}
+
+.chat-form input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px;
+  font-family: inherit;
+}
+
+.chat-form button {
+  border-radius: 0 5px 5px 0;
+  margin-left: -1px;
+}
+
+.response {
+  background-color: #e6f7ff;
+  padding: 12px 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.user-message {
+  background-color: #f0f0f0;
+  padding: 12px 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  max-width: 80%;
+  margin-left: auto;
+  word-wrap: break-word;
+}
+
+/* Code display styling */
+pre {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+  font-family: 'Courier New', monospace;
+  margin: 15px 0;
+}
+
+code {
+  font-family: 'Courier New', monospace;
+  background-color: #f5f5f5;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+/* Loading indicator */
+.loading {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(0,0,0,0.1);
+  border-radius: 50%;
+  border-top-color: var(--primary-color);
+  animation: spin 1s ease-in-out infinite;
+  margin-right: 10px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

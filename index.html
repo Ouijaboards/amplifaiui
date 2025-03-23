@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMPLIFAI - Collective Intelligence</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/openmanus-styles.css">
+    <link rel="stylesheet" href="css/agent-visualization.css">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' ws: wss:;">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">AMPLIFAI</div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#agents">Agents</a></li>
+                    <li><a href="#openmanus">OpenManus</a></li>
+                    <li><a href="#demos">Demos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Amplify Your Collective Intelligence</h1>
+            <p>Harness the power of OpenManus integration and critical thinking capabilities</p>
+            <div class="hero-buttons">
+                <a href="#openmanus" class="btn primary-btn">Try OpenManus</a>
+                <a href="#agents" class="btn secondary-btn">Explore Agents</a>
+            </div>
+            <div class="agent-animation">
+                <div class="agent-node central">MCP</div>
+                <div class="agent-node n1">Reasoning</div>
+                <div class="agent-node n2">Research</div>
+                <div class="agent-node n3">Code</div>
+                <div class="agent-node n4">Planning</div>
+                <div class="agent-node n5">Tool</div>
+                <div class="agent-connection c1"></div>
+                <div class="agent-connection c2"></div>
+                <div class="agent-connection c3"></div>
+                <div class="agent-connection c4"></div>
+                <div class="agent-connection c5"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About AMPLIFAI</h2>
+            <p>AMPLIFAI is a cutting-edge platform designed to enhance collective intelligence through advanced AI integration and critical thinking frameworks.</p>
+            <div class="about-grid">
+                <div class="about-item">
+                    <h3>Our Mission</h3>
+                    <p>To amplify human potential through collaborative intelligence systems.</p>
+                </div>
+                <div class="about-item">
+                    <h3>Our Vision</h3>
+                    <p>Creating a world where collective intelligence solves our most complex challenges.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-item" data-feature="openmanus">
+                    <div class="feature-icon"><i class="icon-brain"></i></div>
+                    <h3>OpenManus Integration</h3>
+                    <p>Seamlessly connect with advanced AI capabilities to enhance your collective intelligence systems.</p>
+                </div>
+                <div class="feature-item" data-feature="critical">
+                    <div class="feature-icon"><i class="icon-thinking"></i></div>
+                    <h3>Critical Thinking Framework</h3>
+                    <p>Structured approaches to problem-solving that enhance decision-making processes.</p>
+                </div>
+                <div class="feature-item" data-feature="collective">
+                    <div class="feature-icon"><i class="icon-network"></i></div>
+                    <h3>Collective Intelligence Architecture</h3>
+                    <p>Purpose-built systems that amplify group knowledge and collaborative potential.</p>
+                </div>
+                <div class="feature-item" data-feature="ui">
+                    <div class="feature-icon"><i class="icon-interface"></i></div>
+                    <h3>Enhanced User Interface</h3>
+                    <p>Intuitive design that makes complex interactions simple and accessible.</p>
+                </div>
+                <div class="feature-item" data-feature="self">
+                    <div class="feature-icon"><i class="icon-code"></i></div>
+                    <h3>Self-Modification Capabilities</h3>
+                    <p>Advanced systems that can improve their own functionality and code.</p>
+                </div>
+                <div class="feature-item" data-feature="agents">
+                    <div class="feature-icon"><i class="icon-agents"></i></div>
+                    <h3>Multi-Agent System</h3>
+                    <p>Specialized agents working together to solve complex problems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="agents" class="agents">
+        <div class="container">
+            <h2>Agent Architecture</h2>
+            <p>AMPLIFAI's power comes from its advanced multi-agent architecture. Each specialized agent contributes unique capabilities to the collective intelligence system.</p>
+            
+            <div class="agent-visualization">
+                <div class="agent-system">
+                    <div class="agent-node mcp" id="mcp-node">
+                        <div class="agent-icon">MCP</div>
+                        <div class="agent-name">Master Control Program</div>
+                    </div>
+                    <div class="agent-connections">
+                        <div class="agent-node reasoning" id="reasoning-node">
+                            <div class="agent-icon">R</div>
+                            <div class="agent-name">Reasoning Agent</div>
+                        </div>
+                        <div class="agent-node research" id="research-node">
+                            <div class="agent-icon">I</div>
+                            <div class="agent-name">Information Agent</div>
+                        </div>
+                        <div class="agent-node code" id="code-node">
+                            <div class="agent-icon">C</div>
+                            <div class="agent-name">Code Agent</div>
+                        </div>
+                        <div class="agent-node planning" id="planning-node">
+                            <div class="agent-icon">P</div>
+                            <div class="agent-name">Planning Agent</div>
+                        </div>
+                        <div class="agent-node tool" id="tool-node">
+                            <div class="agent-icon">T</div>
+                            <div class="agent-name">Tool Agent</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="agent-details">
+                    <div class="agent-detail" id="mcp-detail">
+                        <h3>Master Control Program (MCP)</h3>
+                        <p>The central orchestrator that coordinates all agent activities, manages task allocation, and ensures efficient collaboration between specialized agents.</p>
+                        <div class="agent-capabilities">
+                            <span>Task Orchestration</span>
+                            <span>Resource Allocation</span>
+                            <span>System Monitoring</span>
+                        </div>
+                    </div>
+                    <div class="agent-detail" id="reasoning-detail">
+                        <h3>Reasoning Agent</h3>
+                        <p>Specializes in critical thinking, logical analysis, and evaluation of arguments to provide well-reasoned conclusions and recommendations.</p>
+                        <div class="agent-capabilities">
+                            <span>Critical Analysis</span>
+                            <span>Logical Reasoning</span>
+                            <span>Argument Evaluation</span>
+                        </div>
+                    </div>
+                    <div class="agent-detail" id="research-detail">
+                        <h3>Information Agent</h3>
+                        <p>Gathers, verifies, and synthesizes information from various sources to provide comprehensive and accurate data for decision-making.</p>
+                        <div class="agent-capabilities">
+                            <span>Data Collection</span>
+                            <span>Fact Verification</span>
+                            <span>Information Synthesis</span>
+                        </div>
+                    </div>
+                    <div class="agent-detail" id="code-detail">
+                        <h3>Code Agent</h3>
+                        <p>Generates, optimizes, and refactors code across multiple programming languages, enabling self-modification capabilities.</p>
+                        <div class="agent-capabilities">
+                            <span>Code Generation</span>
+                            <span>Self-Modification</span>
+                            <span>Technical Implementation</span>
+                        </div>
+                    </div>
+                    <div class="agent-detail" id="planning-detail">
+                        <h3>Planning Agent</h3>
+                        <p>Creates structured plans for complex tasks, breaking them down into manageable steps and tracking progress toward goals.</p>
+                        <div class="agent-capabilities">
+                            <span>Task Planning</span>
+                            <span>Progress Tracking</span>
+                            <span>Goal Management</span>
+                        </div>
+                    </div>
+                    <div class="agent-detail" id="tool-detail">
+                        <h3>Tool Agent</h3>
+                        <p>Manages and executes various tools and external integrations, providing specialized capabilities to the agent collective.</p>
+                        <div class="agent-capabilities">
+                            <span>Tool Execution</span>
+                            <span>External Integration</span>
+                            <span>Resource Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="openmanus" class="openmanus">
+        <div class="container">
+            <h2>OpenManus AI Assistant</h2>
+            <p>Experience the power of our OpenManus integration. Ask questions, get assistance, or explore its capabilities.</p>
+            
+            <div class="system-status">
+                <div class="status-indicator active" id="system-status">System Active</div>
+                <div class="agent-status">
+                    <div class="agent-status-item" id="mcp-status">MCP: Active</div>
+                    <div class="agent-status-item" id="reasoning-status">Reasoning: Standby</div>
+                    <div class="agent-status-item" id="research-status">Research: Standby</div>
+                    <div class="agent-status-item" id="code-status">Code: Standby</div>
+                    <div class="agent-status-item" id="planning-status">Planning: Standby</div>
+                    <div class="agent-status-item" id="tool-status">Tool: Standby</div>
+                </div>
+            </div>
+            
+            <div class="chat-container">
+                <div class="thinking-visualization" id="thinking-visualization">
+                    <div class="thinking-header">Critical Thinking Process</div>
+                    <div class="thinking-steps">
+                        <div class="thinking-step" id="step-1">
+                            <div class="step-number">1</div>
+                            <div class="step-name">Identify Question</div>
+                            <div class="step-progress"></div>
+                        </div>
+                        <div class="thinking-step" id="step-2">
+                            <div class="step-number">2</div>
+                            <div class="step-name">Gather Information</div>
+                            <div class="step-progress"></div>
+                        </div>
+                        <div class="thinking-step" id="step-3">
+                            <div class="step-number">3</div>
+                            <div class="step-name">Analyze Evidence</div>
+                            <div class="step-progress"></div>
+                        </div>
+                        <div class="thinking-step" id="step-4">
+                            <div class="step-number">4</div>
+                            <div class="step-name">Consider Alternatives</div>
+                            <div class="step-progress"></div>
+                        </div>
+                        <div class="thinking-step" id="step-5">
+                            <div class="step-number">5</div>
+                            <div class="step-name">Draw Conclusions</div>
+                            <div class="step-progress"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="chat-output" class="chat-output">
+                    <div class="response">
+                        <div class="response-header">
+                            <span class="agent-tag">MCP</span>
+                            <span class="timestamp">Just now</span>
+                        </div>
+                        <div class="response-content">Hello! I'm OpenManus, your AI assistant powered by a multi-agent system. How can I help you today?</div>
+                    </div>
+                </div>
+                
+                <form id="chat-form" class="chat-form">
+                    <input type="text" id="user-input" placeholder="Type your message here..." required>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="demos" class="demos">
+        <div class="container">
+            <h2>Capability Demonstrations</h2>
+            <p>Explore interactive demonstrations of AMPLIFAI's key capabilities.</p>
+            
+            <div class="demo-tabs">
+                <div class="demo-tab active" data-demo="critical">Critical Thinking</div>
+                <div class="demo-tab" data-demo="code">Code Generation</div>
+                <div class="demo-tab" data-demo="collective">Collective Intelligence</div>
+                <div class="demo-tab" data-demo="self">Self-Modification</div>
+            </div>
+            
+            <div class="demo-content">
+                <div class="demo-panel active" id="demo-critical">
+                    <h3>Critical Thinking Demonstration</h3>
+                    <p>See how AMPLIFAI analyzes complex topics from multiple perspectives.</p>
+                    
+                    <div class="demo-interactive">
+                        <div class="demo-input">
+                            <label for="critical-topic">Enter a topic to analyze:</label>
+                            <div class="input-group">
+                                <input type="text" id="critical-topic" placeholder="e.g., Climate change solutions">
+                                <button id="analyze-btn" class="btn">Analyze</button>
+                            </div>
+                        </div>
+                        
+                        <div class="demo-output" id="critical-output">
+                            <div class="demo-placeholder">Analysis results will appear here</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-panel" id="demo-code">
+                    <h3>Code Generation Demonstration</h3>
+                    <p>Watch AMPLIFAI generate code based on your requirements.</p>
+                    
+                    <div class="demo-interactive">
+                        <div class="demo-input">
+                            <label for="code-requirements">Describe what you want to build:</label>
+                            <div class="input-group">
+                                <input type="text" id="code-requirements" placeholder="e.g., A function to calculate Fibonacci numbers">
+                                <select id="code-language">
+                                    <option value="javascript">JavaScript</option>
+                                    <option value="python">Python</option>
+                                    <option value="java">Java</option>
+                                    <option value="csharp">C#</option>
+                                </select>
+                                <button id="generate-btn" class="btn">Generate</button>
+                            </div>
+                        </div>
+                        
+                        <div class="demo-output" id="code-output">
+                            <div class="demo-placeholder">Generated code will appear here</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-panel" id="demo-collective">
+                    <h3>Collective Intelligence Demonstration</h3>
+                    <p>Experience how multiple agents collaborate to solve complex problems.</p>
+                    
+                    <div class="demo-interactive">
+                        <div class="demo-input">
+                            <label for="problem-description">Describe a complex problem:</label>
+                            <div class="input-group">
+                                <input type="text" id="problem-description" placeholder="e.g., How to optimize a supply chain">
+                                <button id="solve-btn" class="btn">Solve</button>
+                            </div>
+                        </div>
+                        
+                        <div class="demo-output" id="collective-output">
+                            <div class="demo-placeholder">Collaborative solution will appear here</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-panel" id="demo-self">
+                    <h3>Self-Modification Demonstration</h3>
+                    <p>Observe how AMPLIFAI can improve its own code and functionality.</p>
+                    
+                    <div class="demo-interactive">
+                        <div class="demo-input">
+                            <label for="improvement-area">Select an area to improve:</label>
+                            <div class="input-group">
+                                <select id="improvement-area">
+                                    <option value="performance">Performance Optimization</option>
+                                    <option value="features">Feature Enhancement</option>
+                                    <option value="security">Security Hardening</option>
+                                    <option value="ui">UI Improvement</option>
+                                </select>
+                                <button id="improve-btn" class="btn">Improve</button>
+                            </div>
+                        </div>
+                        
+                        <div class="demo-output" id="self-output">
+                            <div class="demo-placeholder">Self-modification process will appear here</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">AMPLIFAI</div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#features">Features</a>
+                    <a href="#agents">Agents</a>
+                    <a href="#openmanus">OpenManus</a>
+                    <a href="#demos">Demos</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <p>&copy; 2025 AMPLIFAI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/openmanus-integration.js" type="module"></script>
+    <script src="js/agent-visualization.js"></script>
+    <script src="js/demo-controller.js"></script>
+</body>
+</html>
