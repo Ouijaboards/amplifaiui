@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amplifai</title>
+    <link rel="stylesheet" href="ui-customization.css">
+</head>
+<body>
+    <!-- Main content container -->
+    <div class="amplifai-container">
+        <header>
+            <h1>Amplifai</h1>
+            <!-- Announcement bar implementation -->
+            <div id="announcement-bar"></div>
+        </header>
+        
+        <main>
+            <p>Welcome to Amplifai - Your AI-powered solution</p>
+            
+            <!-- Content from test page can be integrated here -->
+            <div id="content-container"></div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 Amplifai. All rights reserved.</p>
+        </footer>
+    </div>
 
+    <!-- Scripts -->
+    <script src="ui-customization.js"></script>
+    <script src="inline-announcement-bar-code.js"></script>
+    <script>
+        // Load test page content if needed
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize UI customizations
+            if (typeof initializeUICustomization === 'function') {
+                initializeUICustomization();
+            }
+        });
+    </script>
+</body>
+</html>
