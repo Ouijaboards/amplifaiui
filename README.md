@@ -16,11 +16,11 @@ This is the implementation for the amplifai.info website, designed to be deploye
 - CSRF protection
 
 ## Deployment Instructions
-1. Log into Squarespace using danielbarrass@amplifai.info credentials
-2. Navigate to the website editor
-3. Upload these files to the appropriate sections
-4. Verify SSL is enabled
-5. Test all functionality before finalizing
+1. Log into Squarespace using credentials
+3. Navigate to the website editor
+4. Upload these files to the appropriate sections
+5. Verify SSL is enabled
+6. Test all functionality before finalizing
 
 ## File Structure
 - index.html - Main website content
